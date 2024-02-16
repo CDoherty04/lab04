@@ -8,14 +8,14 @@ Purpose: Use recursion to solve given problems
 
 Run driver to execute the program
 """
-from executive import Executive
+from recursivepower import RecursivePower
 
 
 def main():
-    """Hands the process over to an Executive object"""
+    """Runs the functions"""
 
-    my_exec = Executive()
-    my_exec.run()
+    # Simply creating the object runs the method through initialization
+    rp = RecursivePower()
 
 
 if __name__ == "__main__":
