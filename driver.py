@@ -9,13 +9,15 @@ Purpose: Use recursion to solve given problems
 Run driver to execute the program
 """
 from recursivepower import RecursivePower
+from outbreak import Outbreak
 
 
 def main():
     """Runs the functions"""
 
     # Simply creating the object runs the method through initialization
-    rp = RecursivePower()
+    # rp = RecursivePower()
+    ob = Outbreak()
 
 
 if __name__ == "__main__":

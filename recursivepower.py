@@ -31,7 +31,7 @@ class RecursivePower:
         if power == 0:
             return 1
         elif power == 1:
-            return self.base
+            return base
 
         # Return the base times the base to the power-1
         # eg: 3^2 would become 3 * 3^1
