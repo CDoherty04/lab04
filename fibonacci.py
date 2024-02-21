@@ -19,10 +19,12 @@ def run():
                 # Begin recursive call, print the result, and end the loop
                 if mode == "-i":
                     print(fib_term(value))
+                    print()
                     break
 
                 elif mode == "-v":
                     print(fib_value(value))
+                    print()
                     break
 
                 # Check for invalid input
@@ -35,18 +37,32 @@ def run():
             print("\nThe input requires '-i' or '-v' and an integer value\n")
 
 
-def fib_term(term):
-    """Prints the result of the fibonacci sequence at a given term."""
+def fib_term(index):
+    """Returns the result of the fibonacci sequence at a given index."""
 
     # Base cases
-    if term == 0 or term == 1:
-        return term
+    if index == 0 or index == 1:
+        return index
 
     # Return the last number plus the one before that
     else:
-        return fib_term(term-1) + fib_term(term-2)
+        return fib_term(index-1) + fib_term(index-2)
 
 
 def fib_value(value):
-    """Prints the result of the base taken to the given power."""
-    pass
+    """Returns whether the fibonacci sequence contains a given value at any index"""
+
+    # Base case
+    if value == 0 or value == 1:
+        return f"{value} is in the sequence"
+
+    else:
+        count = 3
+        current = 0
+        while current < value:
+            current = fib_term(count)
+            count += 1
+        if value == current:
+            return f"{value} is in the sequence"
+        else:
+            return f"{value} is not in the sequence"

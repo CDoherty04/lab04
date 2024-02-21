@@ -20,6 +20,7 @@ def main():
     # outbreak.run()
     fibonacci.run()
 
+
 if __name__ == "__main__":
     """Call stack begins here"""
 
