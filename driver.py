@@ -23,7 +23,8 @@ def main():
             choice = int(input("With recursion...\n"
                                "1) Get a power of a base\n"
                                "2) Play Outbreak\n"
-                               "3) Experiment with the fibonacci sequence\n"))
+                               "3) Experiment with the fibonacci sequence\n"
+                               "4) Quit the program\n"))
             print()
 
             # Run choice program
@@ -34,17 +35,16 @@ def main():
                     outbreak.run()
                 case 3:
                     fibonacci.run()
+                case 4:
+                    quit("Exiting...")
 
                 # Check input's range
                 case _:
-                    print("Make sure the number you give is an integer between 1-3\n")
+                    print("Make sure the number you give is an integer between 1-4\n")
                     continue
 
-            # Break if a valid choice is given
-            break
-
         except ValueError:
-            print("\nMake sure the number you give is an integer between 1-3\n")
+            print("\nMake sure the number you give is an integer between 1-4\n")
 
 
 if __name__ == "__main__":
