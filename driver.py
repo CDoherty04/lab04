@@ -8,16 +8,15 @@ Purpose: Use recursion to solve given problems
 
 Run driver to execute the program
 """
-from recursivepower import RecursivePower
-from outbreak import Outbreak
+import recursivepower
+import outbreak
 
 
 def main():
     """Runs the functions"""
 
-    # Simply creating the object runs the method through initialization
-    # rp = RecursivePower()
-    ob = Outbreak()
+    recursivepower.run()
+    outbreak.run()
 
 
 if __name__ == "__main__":
