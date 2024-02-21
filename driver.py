@@ -10,14 +10,15 @@ Run driver to execute the program
 """
 import recursivepower
 import outbreak
+import fibonacci
 
 
 def main():
     """Runs the functions"""
 
-    recursivepower.run()
-    outbreak.run()
-
+    # recursivepower.run()
+    # outbreak.run()
+    fibonacci.run()
 
 if __name__ == "__main__":
     """Call stack begins here"""
