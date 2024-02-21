@@ -57,11 +57,17 @@ def fib_value(value):
         return f"{value} is in the sequence"
 
     else:
-        count = 3
+
+        # index represents the index in the sequence, and current represents the value at that index
+        index = 3
         current = 0
+
+        # Keep running through terms of the sequence until the value is reached
         while current < value:
-            current = fib_term(count)
-            count += 1
+            current = fib_term(index)
+            index += 1
+
+        # Once the value is passed, it's either equal to the given value or not. Return appropriately
         if value == current:
             return f"{value} is in the sequence"
         else:

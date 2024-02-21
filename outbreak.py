@@ -15,6 +15,7 @@ def run():
             else:
                 # Begin recursive call, print the result, and end the loop
                 print(get_total_sick(day))
+                print()
                 break
 
         # Loop continues until integers are given
